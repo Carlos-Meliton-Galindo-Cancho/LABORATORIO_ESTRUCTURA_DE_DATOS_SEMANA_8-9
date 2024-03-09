@@ -1,24 +1,24 @@
-# Asegurar que una función retorna un valor específico
+"""
+EJERCICIO 7:  GESTIONAR ASERCIONES
 
-def funcion_a_probar():
+Asegurar que una función retorna un valor específico
 
-    return 42  # Valor que debe retornar la función
-
-
-resultado = funcion_a_probar()
-assert resultado == 42, "La función no retornó el valor esperado."
-
-print("La función retornó el valor esperado:", resultado)
+"""
 
 
+def funcion_a_probar():                                                   # se define una función que no toma argumentos y devuelve el valor 42                          
+    return 42  
+
+resultado = funcion_a_probar()                                            # se llama a la función y se asigna su resultado a la variable (resultado)
+assert resultado == 42, "La función no retornó el valor esperado."        # se utiliza una aserción para verificar si el resultado es igual a 42. Si el resultado no es igual a 42, se generará un AssertionError con el mensaje "La función no retornó el valor esperado"
+
+print("La función retornó el valor esperado:", resultado)                 # este mensaje se imprimirá solo si la aserción pasa sin errores
 
 
 
 """
-Para asegurar que una función retorne un valor específico, puedes utilizar una aserción justo después de llamar a la función.
+LA IMPRESIÓN FINAL SERÁ:
 
-
-Luego, se llama a la función y se guarda el resultado en una variable llamada resultado.
-Justo después de llamar a la función, se utiliza una aserción para verificar si el resultado es igual al valor específico esperado.
+La función retornó el valor esperado: 42
 
 """
